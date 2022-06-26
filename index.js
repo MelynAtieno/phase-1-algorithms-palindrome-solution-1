@@ -1,5 +1,14 @@
+function reverseString(word) {
+  return word.split("").reverse().join("");
+}
+
 function isPalindrome(word) {
   // Write your algorithm here
+    
+    const wordreverse = reverseString(word);
+    return word === wordreverse;
+  
+  
 }
 
 /* 
@@ -8,6 +17,11 @@ function isPalindrome(word) {
 
 /*
   Add written explanation of your solution here
+
+  // A function called isPalindrome needs to be created. This functions returns
+   either true or false. If a string is a palindrome, the function returns "true",
+   whereas if the string is not a palindrome, the function returns "false".
+  
 */
 
 // You can run `node index.js` to view these console logs
